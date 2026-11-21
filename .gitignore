@@ -1,0 +1,44 @@
+# ---- never publish: settings, keys and anything users made
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*service-account*.json
+*client_secret*.json
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+*.log
+
+# ---- this computer only
+.claude/
+CLAUDE.local.md
+.vscode/
+.idea/
+*.bat
+Thumbs.db
+.DS_Store
+
+# ---- Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# ---- Generated frame dumps, media & test artifacts
+*.mp4
+*.wav
+*.mp3
+face_frames/
+frames_*/
+full_clip002_src_frames/
+gta_in_game_subs/
+src_subs/
+job.json
+.freebuff/
+
